@@ -1,0 +1,17 @@
+.sorting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.array-bar {
+  width: 12px;
+}

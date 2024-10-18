@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import SortingVisualizer from './Components/SortingVisualizer'
+import SortingAlgorithms from './Components/Functions'
 
-function App() {
+const App = () => {
+  const [arr, setArr] = useState([]);
+
+  const sortMe = (length) => {
+    const newArr = SortingAlgorithms.fillArray([], length);
+    setArr(newArr);
+    console.log(arr);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      {arr.length <= 0 ? (
+        <>
+        {/*!//TODO Render all my Intro stuff here */}
+        <h1>Should not show</h1>
+        <button type='button' onClick={() => sortMe(20)}>Click Me</button>
+        </>
+      ) : (
+
+        <div>
+      <SortingVisualizer arr={arr} />
     </div>
-  );
+  )}
+  </>
+  )
 }
 
-export default App;
+
+export default App
