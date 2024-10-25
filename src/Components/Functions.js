@@ -1,19 +1,12 @@
 
 const SortingAlgorithms = { 
-  // fillArray: (arr, length) => {
-  //   const newArr = [...arr];
-  //   for (let i = 0; i < length; i++) {
-  //     const number = Math.floor(Math.random() * 100);
-  //     newArr.push(number);
-  //   }
-  //   return newArr;
-  // },
-  fillArray: (arr, length) => { 
+  generateArray: (arr, length) => {
     const newArr = [...arr];
     for (let i = 0; i < length; i++) {
-      newArr.push(i)
+      newArr.push(i);
     }
-    return newArr
+
+    return newArr;
   },
   stepOnce: (arr) => {
     const newArr = [...arr];

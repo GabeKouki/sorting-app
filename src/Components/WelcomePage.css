@@ -88,9 +88,6 @@
   transform: translateY(-2px);
 }
 
-/* Media Queries */
-
-/* Large Desktop Screens */
 @media (min-width: 1921px) {
   .content-wrapper {
     max-width: 1000px;
@@ -103,14 +100,12 @@
   }
 }
 
-/* Desktop and Laptop */
 @media (min-width: 1025px) and (max-width: 1920px) {
   .content-wrapper {
     max-width: 800px;
   }
 }
 
-/* Tablets and iPads */
 @media (min-width: 768px) and (max-width: 1024px) {
   .content-wrapper {
     max-width: 90%;
@@ -127,7 +122,6 @@
   }
 }
 
-/* Large Smartphones */
 @media (min-width: 481px) and (max-width: 767px) {
   .content-wrapper {
     max-width: 95%;
@@ -148,7 +142,6 @@
   }
 }
 
-/* Small Smartphones */
 @media (max-width: 480px) {
   .content-wrapper {
     max-width: 100%;
